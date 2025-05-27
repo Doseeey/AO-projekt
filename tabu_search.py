@@ -1,6 +1,7 @@
 import numpy as np
 
-from calculate_makespan import calculate_makespan
+# from calculate_makespan import calculate_makespan
+from proper_cm import calculate_makespan
 
 def tabu_search(processing_times: np.ndarray, setup_times: np.ndarray, max_iter: int=100, tabu_size: int=10, verbose: bool=True):
     n_jobs = processing_times.shape[1]
